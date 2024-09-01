@@ -88,7 +88,7 @@ Example
         id: "fruit3"
       }, 
         header: "Melon",
-        title: "Section 2 of Red",
+        title: "Section 2 of Green",
         description: "This is fruit 2 of green",
         id: "fruit4"
       }]
