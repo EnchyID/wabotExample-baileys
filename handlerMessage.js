@@ -18,7 +18,8 @@ module.exports = async(chat) => {
     await sock.readMessages([msg.key])
 
     if(command == prefix + "ping"){
-      sock.sendMessage(jid, {text: "Pong!!"}, {quoted: msg})
+      replyTo(jid, "Pong!!", msg)
+      //sock.sendMessage(jid, {text: "Pong!!"}, {quoted: msg})
       return
     }
   }
