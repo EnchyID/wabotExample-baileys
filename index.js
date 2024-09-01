@@ -9,6 +9,9 @@ const store = makeInMemoryStore({
   })
 })
 
+global.replyTo = replyTo
+global.sendListMessage = sendListMessage
+
 async function startSock(){
   const { state, saveCreds } = await useMultiFileAuthState("creds")
   
