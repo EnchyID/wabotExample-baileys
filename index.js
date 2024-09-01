@@ -124,7 +124,7 @@ function sendListMessage(jid, options, msg){
         }                      
     }, {userJid: msg.sender, quoted: msg})
     
-    sock.relayMessage(from, template.message, { messageId: msg.key.id });
+    sock.relayMessage(from, template.message, { messageId: msg.key.id })
 }
 
 startSock()
